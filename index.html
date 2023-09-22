@@ -1,29 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | Kate Lynn Porto</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <style>
-
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-  <!-- <header class="d-flex justify-content-end position-fixed top-0 bg-primary">
-    <nav class="float-end d-flex justify-content-around mx-5 text-uppercase fw-bold">
-      <span><a href="#" class="mx-3 text-decoration-none">about</a></span>
-      <span><a href="#" class="mx-3 text-decoration-none">skills</a></span>
-      <span><a href="#" class="mx-3 text-decoration-none">projects</a></span>
-    </nav>
-  </header> -->
 
-  <main class="container-fluid p-0 m-0">
-    <div class="opacity-50 vh-100 z-0" style="background-image: url(./photos/background.png);"></div>
-    <div class=" text-danger fw-bold z-3 h-50 w-25 m-5 p-5">Hello World</div>
-    <!-- <div class="position-absolute text-success z-3 bg-dark h-50 w-25 m-5 p-5">Hello World</div> -->
+<!-- body -->
+<body class="bg-image" style="background: url(./photos/background.png) no-repeat center center fixed;">
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid ">
+        <span class="navbar-brand">PORTFOLIO</span>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#aboutpage" class="nav-link active">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Skills</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#coreskills" class="dropdown-item">Core Skills</a>
+                </li>
+                <li>
+                  <a href="#technicalskills" class="dropdown-item">Technical Skills</a>
+                </li>
+                <li>
+                  <a href="#softskills" class="dropdown-item">Soft Skills</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#projectspage" class="nav-link">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container-fluid vh-100">
+    <!-- Social Links -->
+    <div class="position-fixed fixed-bottom d-flex flex-column justify-content-around">
+      <a href="https://kateporto.github.io/">
+        <i class="fa-brands fa-github-alt m-1 p-2 rounded-circle border border-1 border-dark bg-dark text-light"></i>
+      </a>
+      <a href="https://www.linkedin.com">
+        <i class="fa-brands fa-linkedin-in m-1 p-2 rounded-circle border border-1 border-dark bg-dark text-light"></i>
+      </a>
+      <a href="https://www.facebook.com">
+        <i class="fa-brands fa-facebook-messenger m-1 p-2 rounded-circle border border-1 border-dark bg-dark text-light"></i>
+      </a>
+    </div>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
