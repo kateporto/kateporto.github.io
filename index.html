@@ -12,7 +12,7 @@
 <!-- body -->
 <body class="bg-image" style="background: url(./photos/background.png) no-repeat center center fixed;">
   <!-- HEADER -->
-  <header>
+  <header class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid ">
         <span class="navbar-brand">PORTFOLIO</span>
@@ -50,18 +50,31 @@
 
   <!-- MAIN -->
   <main class="container-fluid vh-100">
-    <!-- Social Links -->
-    <div class="position-fixed fixed-bottom d-flex flex-column justify-content-around">
-      <a href="https://kateporto.github.io/">
-        <i class="fa-brands fa-github-alt m-1 p-2 rounded-circle border border-1 border-dark bg-dark text-light"></i>
-      </a>
-      <a href="https://www.linkedin.com">
-        <i class="fa-brands fa-linkedin-in m-1 p-2 rounded-circle border border-1 border-dark bg-dark text-light"></i>
-      </a>
-      <a href="https://www.facebook.com">
-        <i class="fa-brands fa-facebook-messenger m-1 p-2 rounded-circle border border-1 border-dark bg-dark text-light"></i>
+    <div class="d-flex justify-content-between align-items-end position-fixed fixed-bottom mb-2 ms-2 ">
+      <!-- Social Links -->
+      <div class="d-flex flex-column justify-content-around fs-5">
+        <a href="https://github.com/kateporto">
+          <i class="fa-brands fa-github-alt m-1 p-2 rounded-circle border border-1 border-dark bg-dark text-light"></i>
+        </a>
+        <a href="https://www.linkedin.com">
+          <i class="fa-brands fa-linkedin-in m-1 p-2 rounded-circle border border-1 border-dark bg-dark text-light"></i>
+        </a>
+        <a href="https://www.facebook.com">
+          <i class="fa-brands fa-facebook-messenger m-1 p-2 rounded-circle border border-1 border-dark bg-dark text-light"></i>
+        </a>
+      </div>
+      <!-- Download Resume -->
+      <a class="btn btn-link bg-dark text-light text-decoration-none btn-sm m-1" href="./documents/cv_katelynnporto.pdf">
+        <i class="fa-solid fa-download"></i>
+        Download CV
       </a>
     </div>
+    
+
+    
+    
+    
+    
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
