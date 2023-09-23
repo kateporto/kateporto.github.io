@@ -7,6 +7,13 @@
   <title>Portfolio | Kate Lynn Porto</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @media screen and (min-width: 992px) {
+      .core-soft-container {
+        width: 35%;
+      }
+    }
+  </style>
 </head>
 
 <!-- body -->
@@ -46,6 +53,9 @@
             </li>
             <li class="nav-item">
               <a href="#projectspage" class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#experiencepage" class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu">Experience</a>
             </li>
           </ul>
         </div>
@@ -117,49 +127,46 @@
     </div>
     <!-- END About Page -->
 
-    <!-- Skills -->
+    <!-- Skills Page -->
     <div class="w-100 text-light d-flex flex-column">
       <!-- Core and Soft Skills Page -->
-      <div>
-        <div class="d-lg-flex justify-content-lg-center mt-lg-5 pt-lg-5" id="coresoft-skills">
-          <!-- Core Skills -->
-          <div class="m-3 pt-2 d-flex justify-content-center rounded-4" style="background-color: rgba(33,37,41,0.95);">
-            <div class="px-3" id="coreskills">
-              <div class="fs-2 fw-bold text-uppercase text-center">
-                Core Skills
-              </div>
-              <ul>
-                <li>CI/CD Pipeline Development</li>
-                <li>Disaster Recovery Planning</li>
-                <li>Team Leadership and Mentorship</li>
-                <li>Security Measures Implementation</li>
-                <li>System Performance Monitoring</li>
-                <li>Automation of Operational Tasks</li>
-                <li>Scripting and Tool Development</li>
-                <li>Research and Evaluation</li>
-              </ul>
+      <div class="d-lg-flex justify-content-lg-center mt-lg-5 pt-lg-5" id="coresoft-skills">
+        <!-- Core Skills -->
+        <div class="core-soft-container m-3 pt-2 d-flex justify-content-center rounded-4" style="background-color: rgba(33,37,41,0.95);">
+          <div class="px-3" id="coreskills">
+            <div class="fs-2 fw-bold text-uppercase text-center">
+              Core Skills
             </div>
+            <ul>
+              <li>CI/CD Pipeline Development</li>
+              <li>Disaster Recovery Planning</li>
+              <li>Team Leadership and Mentorship</li>
+              <li>Security Measures Implementation</li>
+              <li>System Performance Monitoring</li>
+              <li>Automation of Operational Tasks</li>
+              <li>Scripting and Tool Development</li>
+              <li>Research and Evaluation</li>
+            </ul>
           </div>
-          <!-- Soft Skills -->
-          <div class="m-3 pt-2 d-flex justify-content-center flex-lg-column justify-content-lg-start rounded-4" style="background-color: rgba(33,37,41,0.95);">
-            <div class="px-3" id="softskills">
-              <div class="fs-2 fw-bold text-uppercase text-center">
-                Soft Skills
-              </div>
-              <ul>
-                <li>Leadership and Team Management</li>
-                <li>Collaboration and Cross-Functional Coordination</li>
-                <li>Problem Solving and Critical Thinking</li>
-                <li>Adaptability and Flexibility</li>
-                <li>Time Management and Prioritization</li>
-                <li>Decision Making and Strategic Planning</li>
-                <li>Creativity and Innovation</li>
-              </ul>
+        </div>
+        <!-- Soft Skills -->
+        <div class="core-soft-container m-3 pt-2 d-flex justify-content-center flex-lg-column justify-content-lg-start rounded-4" style="background-color: rgba(33,37,41,0.95);">
+          <div class="px-3" id="softskills">
+            <div class="fs-2 fw-bold text-uppercase text-center">
+              Soft Skills
             </div>
+            <ul>
+              <li>Leadership and Team Management</li>
+              <li>Collaboration and Cross-Functional Coordination</li>
+              <li>Problem Solving and Critical Thinking</li>
+              <li>Adaptability and Flexibility</li>
+              <li>Time Management and Prioritization</li>
+              <li>Decision Making and Strategic Planning</li>
+              <li>Creativity and Innovation</li>
+            </ul>
           </div>
         </div>
       </div>
-      <!-- END Core and Soft Skills -->
 
       <!-- Technical Skills -->
       <div class="mx-3 pt-2 d-flex justify-content-center rounded-4" style="background-color: rgba(33,37,41,0.95);">
@@ -201,7 +208,44 @@
         </div>
       </div>
     </div>
-    <!-- END Technical Skills -->
+    <!-- END Skills Page -->
+
+    <!-- Experience Page -->
+    <div class="mx-3 pt-2 mt-4 rounded-4 text-light" style="background-color: rgba(33,37,41,0.95);" id="experiencepage">
+      <div>
+        <div class="fs-2 fw-bold text-uppercase text-center">
+          Work Experience
+        </div>
+        <ul>
+          <li>
+            <div class="fs-6 fw-bold text-uppercase">
+            Senior Software Engineer
+            </div>
+            <span class="fst-italic">April 2021 - Present</span>
+            <ul style="list-style-type: disc;">
+              <li>
+                Developed and maintained CI/CD pipelines for 50+ applications, reducing deployment time and minimizing production issues.
+              </li>
+              <li>
+                Troubleshoot build and deployment pipelines.
+              </li>
+              <li>
+                Created Groovy and shell scripts.
+              </li>
+              <li>
+                Migrated several application configurations from one tool to another (Jenkins to Harness, Bitbucket to GitLab).
+              </li>
+              <li>
+                Researched and evaluated new technologies to improve system performance and reliability.
+              </li>
+              <li>
+                Designed and implemented a branching strategy.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
     
   </main>
 
