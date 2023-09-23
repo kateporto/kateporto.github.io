@@ -27,14 +27,19 @@
             <li class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Skills</a>
               <ul class="dropdown-menu bg-dark-subtle">
-                <li>
+                <!-- Mobile -->
+                <li class="d-lg-none">
                   <a href="#coreskills" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#menu">Core Skills</a>
+                </li>
+                <li class="d-lg-none">
+                  <a href="#softskills" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#menu">Soft Skills</a>
+                </li>
+                <!-- Desktop -->
+                <li class="d-none d-lg-inline">
+                  <a href="#coresoft-skills" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#menu">Core & Soft Skills</a>
                 </li>
                 <li>
                   <a href="#technicalskills" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#menu">Technical Skills</a>
-                </li>
-                <li>
-                  <a href="#softskills" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#menu">Soft Skills</a>
                 </li>
               </ul>
             </li>
@@ -49,7 +54,7 @@
 
   <!-- MAIN -->
   <main class="container-fluid vh-100" data-bs-spy="scroll" data-bs-target="#navbar-header" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
-    
+    <!-- Floats -->
     <div class="d-flex justify-content-between align-items-end position-fixed fixed-bottom mb-2 ms-2 me-2 ">
       <!-- Social Links -->
       <div class="d-flex flex-column justify-content-around fs-5">
@@ -69,7 +74,7 @@
         Download CV
       </a>
     </div>
-    <!-- END Social Links -->
+    <!-- END Floats -->
 
     <!-- About Page -->
     <div class="mt-5 pt-3 mt-lg-0 pt-lg-0 min-vh-100 d-flex align-items-center" id="aboutpage">
@@ -111,6 +116,90 @@
     </div>
     <!-- END About Page -->
 
+    <!-- Core and Soft Skills Page -->
+    <div class="mt-5 pt-3 mt-lg-0 pt-lg-0 min-vh-100 d-flex flex-column align-items-center">
+      <div class="d-flex flex-column flex-lg-row justify-content-around px-4 m-3 text-light w-100" id="coresoft-skills">
+        <!-- Core Skills -->
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center px-2 my-3 me-lg-3 text-light rounded-4" style="background-color: rgba(33,37,41,0.95);">
+          <div class="d-flex flex-column justify-content-between align-items-center py-1" id="coreskills">
+            <div class="fs-2 fw-bold text-uppercase">
+              Core Skills
+            </div>
+            <ul class="core-skills">
+              <li>CI/CD Pipeline Development</li>
+              <li>Disaster Recovery Planning</li>
+              <li>Team Leadership and Mentorship</li>
+              <li>Security Measures Implementation</li>
+              <li>System Performance Monitoring</li>
+              <li>Automation of Operational Tasks</li>
+              <li>Scripting and Tool Development</li>
+              <li>Research and Evaluation</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Soft Skills -->
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center px-2 my-3 text-light rounded-4" style="background-color: rgba(33,37,41,0.95);">
+          <div class="d-flex flex-column justify-content-between align-items-center py-1" id="softskills">
+            <div class="fs-2 fw-bold text-uppercase">
+              Soft Skills
+            </div>
+            <ul class="soft-skills">
+              <li>Leadership and Team Management</li>
+              <li>Collaboration and Cross-Functional Coordination</li>
+              <li>Problem Solving and Critical Thinking</li>
+              <li>Adaptability and Flexibility</li>
+              <li>Time Management and Prioritization</li>
+              <li>Decision Making and Strategic Planning</li>
+              <li>Creativity and Innovation</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Mobile Technical Skills -->
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center px-2 my-3 me-lg-3 text-light rounded-4 d-lg-none" style="background-color: rgba(33,37,41,0.95);">
+          <div class="d-flex flex-column justify-content-between align-items-center py-1" id="technicalskills">
+            <div class="fs-2 fw-bold text-uppercase">
+              Technical Skills
+            </div>
+            <ul class="core-skills">
+              <li>CI/CD Pipeline Development</li>
+              <li>Disaster Recovery Planning</li>
+              <li>Team Leadership and Mentorship</li>
+              <li>Security Measures Implementation</li>
+              <li>System Performance Monitoring</li>
+              <li>Automation of Operational Tasks</li>
+              <li>Scripting and Tool Development</li>
+              <li>Research and Evaluation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Core and Soft Skills -->
+
+    <!-- Desktop Technical Skills -->
+    <div class="mt-5 pt-3 mt-lg-0 pt-lg-0 min-vh-100 d-lg-flex flex-column align-items-center d-none">
+      <div class="d-flex flex-column flex-lg-row justify-content-around px-4 m-3 text-light w-100">
+        <!-- Technical Skills -->
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center px-2 my-3 me-lg-3 text-light rounded-4" style="background-color: rgba(33,37,41,0.95);">
+          <div class="d-flex flex-column justify-content-between align-items-center py-1" id="technicalskills">
+            <div class="fs-2 fw-bold text-uppercase">
+              Technical Skills
+            </div>
+            <ul class="core-skills">
+              <li>CI/CD Pipeline Development</li>
+              <li>Disaster Recovery Planning</li>
+              <li>Team Leadership and Mentorship</li>
+              <li>Security Measures Implementation</li>
+              <li>System Performance Monitoring</li>
+              <li>Automation of Operational Tasks</li>
+              <li>Scripting and Tool Development</li>
+              <li>Research and Evaluation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Technical Skills -->
     
   </main>
 
