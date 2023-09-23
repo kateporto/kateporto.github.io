@@ -43,7 +43,7 @@
                 </li>
                 <!-- Desktop -->
                 <li class="d-none d-lg-inline">
-                  <a href="#coresoft-skills" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#menu">Core & Soft Skills</a>
+                  <a href="#coreskills" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#menu">Core & Soft Skills</a>
                 </li>
                 
                 <li>
@@ -88,8 +88,8 @@
     <!-- END Floats -->
 
     <!-- About Page -->
-    <div class="mt-5 pt-3 mt-lg-0 pt-lg-0 min-vh-100 d-flex align-items-center" id="aboutpage">
-      <div class="d-flex flex-column-reverse flex-lg-row justify-content-between align-items-center px-4 m-3 text-light rounded-4" style="background-color: rgba(33,37,41,0.95);">
+    <div class="mt-5 pt-3 mt-lg-4 py-lg-5 min-vh-100 d-flex align-items-center" id="aboutpage">
+      <div class="d-flex flex-column-reverse flex-lg-row justify-content-between align-items-center px-4 m-3 py-lg-4 text-light rounded-4" style="background-color: rgba(33,37,41,0.95);">
         <!-- About Sides -->
         <!-- Mobile -->
         <div class="d-flex flex-column justify-content-between d-lg-none">
@@ -128,13 +128,12 @@
     <!-- END About Page -->
 
     <!-- Skills Page -->
-    <div class="w-100 text-light d-flex flex-column">
-      <!-- Core and Soft Skills Page -->
-      <div class="d-lg-flex justify-content-lg-center mt-lg-5 pt-lg-5" id="coresoft-skills">
+    <div class="container">
+      <div class="row text-light justify-content-lg-center">
         <!-- Core Skills -->
-        <div class="core-soft-container m-3 pt-2 d-flex justify-content-center rounded-4" style="background-color: rgba(33,37,41,0.95);">
-          <div class="px-3" id="coreskills">
-            <div class="fs-2 fw-bold text-uppercase text-center">
+        <div class="col-12 col-lg-5 my-3 m-lg-0" id="coreskills">
+          <div class="bg-dark rounded-4 h-100">
+            <div class="fw-bold fs-2 text-center">
               Core Skills
             </div>
             <ul>
@@ -150,9 +149,9 @@
           </div>
         </div>
         <!-- Soft Skills -->
-        <div class="core-soft-container m-3 pt-2 d-flex justify-content-center flex-lg-column justify-content-lg-start rounded-4" style="background-color: rgba(33,37,41,0.95);">
-          <div class="px-3" id="softskills">
-            <div class="fs-2 fw-bold text-uppercase text-center">
+        <div class="col-12 col-lg-5 my-3 m-lg-0" id="softskills">
+          <div class="bg-dark rounded-4 h-100">
+            <div class="fw-bold fs-2 text-center">
               Soft Skills
             </div>
             <ul>
@@ -166,42 +165,44 @@
             </ul>
           </div>
         </div>
-      </div>
-
-      <!-- Technical Skills -->
-      <div class="mx-3 pt-2 d-flex justify-content-center rounded-4" style="background-color: rgba(33,37,41,0.95);">
-        <div class="px-3" id="technicalskills">
-          <div class="fs-2 fw-bold text-uppercase text-center">
-            Technical Skills
-          </div>
-          <!-- Logo -->
-          <div class="d-flex flex-column justify-content-between align-items-center flex-lg-row align-items-lg-stretch p-lg-3">
-            <div class="text-dark p-2 mb-2 rounded-3 bg-secondary-subtle me-lg-2">
-              <div class="text-center fs-2 fw-bold">
-                DevOps
-              </div>
-              <div class="text-center d-lg-flex flex-lg-wrap justify-content-lg-center align-items-lg-center">
-                <img class="m-2 m-lg-4" style="width: 20%;" src="./photos/Logos/docker.png" alt="docker-logo">
-                <img class="m-2 m-lg-4" style="width: 20%;" src="./photos/Logos/rancher.png" alt="rancher-logo">
-                <img class="m-2 m-lg-4" style="width: 20%;" src="./photos/Logos/git.png" alt="git-logo">
-                <img class="m-2" style="width: 15%;" src="./photos/Logos/jenkins.png" alt="jenkins-logo">
-                <img class="m-2" style="width: 30%;" src="./photos/Logos/artifactory.png" alt="artifactory-logo">
-                <img class="m-2" style="width: 20%;" src="./photos/Logos/grafana.png" alt="grafana-logo">
-                <img class="m-2 mt-lg-4" style="width: 25%;" src="./photos/Logos/harness.png" alt="harness-logo">
+        <!-- Technical Skills -->
+        <div class="col-12 col-lg-10 my-3" id="technicalskills">
+          <div class="bg-dark rounded-4 pt-2 justify-content-lg-center align-items-lg-center">
+            <div class="row">
+              <div class="col fw-bold fs-2 text-center">
+                Technical Skills
               </div>
             </div>
-            <div class="text-dark p-2 mb-2 rounded-3 bg-secondary-subtle">
-              <div class="text-center fs-2 fw-bold">
-                Web
+            <div class="row">
+              <!-- DevOps -->
+              <div class="col-10 text-center mx-auto bg-secondary-subtle rounded-4 pb-0 mt-1">
+                <div class="fw-bold fs-2 text-dark">
+                  DevOps
+                </div>
+                <div>
+                  <img class="m-2 m-lg-4" style="width: 20%;" src="./photos/Logos/docker.png" alt="docker-logo">
+                  <img class="m-2 m-lg-4" style="width: 20%;" src="./photos/Logos/rancher.png" alt="rancher-logo">
+                  <img class="m-2 m-lg-4" style="width: 20%;" src="./photos/Logos/git.png" alt="git-logo">
+                  <img class="m-2" style="width: 15%;" src="./photos/Logos/jenkins.png" alt="jenkins-logo">
+                  <img class="m-2" style="width: 30%;" src="./photos/Logos/artifactory.png" alt="artifactory-logo">
+                  <img class="m-2" style="width: 20%;" src="./photos/Logos/grafana.png" alt="grafana-logo">
+                  <img class="m-2 mt-lg-4" style="width: 25%;" src="./photos/Logos/harness.png" alt="harness-logo">
+                </div>
               </div>
-              <div class="text-center d-lg-flex flex-lg-wrap justify-content-lg-center align-items-lg-center">
-                <img class="m-2 m-lg-4" style="width: 20%;" src="./photos/Logos/html.png" alt="html-logo">
-                <img class="m-2 m-lg-4" style="width: 25%;" src="./photos/Logos/reactjs.png" alt="reactjs-logo">
-                <img class="m-2 m-lg-4" style="width: 14%;" src="./photos/Logos/css.png" alt="css-logo">
-                <img class="m-2" style="width: 20%;" src="./photos/Logos/postgresql.png" alt="postgresql-logo">
-                <img class="m-2" style="width: 35%;" src="./photos/Logos/laravel.png" alt="laravel-logo">
-                <img class="m-2" style="width: 20%;" src="./photos/Logos/bootstrap.png" alt="bootstrap-logo">
-                <img class="m-2" style="width: 23%;" src="./photos/Logos/mysql.png" alt="mysql-logo">
+              <!-- Web -->
+              <div class="col-10 text-center mx-auto bg-secondary-subtle rounded-4 my-3">
+                <div class="fw-bold fs-2 text-dark">
+                  Web
+                </div>
+                <div>
+                  <img class="m-2 m-lg-4" style="width: 20%;" src="./photos/Logos/html.png" alt="html-logo">
+                  <img class="m-2 m-lg-4" style="width: 25%;" src="./photos/Logos/reactjs.png" alt="reactjs-logo">
+                  <img class="m-2 m-lg-4" style="width: 14%;" src="./photos/Logos/css.png" alt="css-logo">
+                  <img class="m-2" style="width: 20%;" src="./photos/Logos/postgresql.png" alt="postgresql-logo">
+                  <img class="m-2" style="width: 35%;" src="./photos/Logos/laravel.png" alt="laravel-logo">
+                  <img class="m-2" style="width: 20%;" src="./photos/Logos/bootstrap.png" alt="bootstrap-logo">
+                  <img class="m-2" style="width: 23%;" src="./photos/Logos/mysql.png" alt="mysql-logo">
+                </div>
               </div>
             </div>
           </div>
