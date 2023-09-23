@@ -13,7 +13,7 @@
 <body class="bg-image" style="background: url(./photos/background.png) no-repeat center center fixed;">
   <!-- HEADER -->
   <header class="fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar-header navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid ">
         <span class="navbar-brand">PORTFOLIO</span>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu"
@@ -23,7 +23,7 @@
         <div class="navbar-collapse collapse" id="menu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#aboutpage" class="nav-link active">About</a>
+              <a href="#aboutpage" class="nav-link">About</a>
             </li>
             <li class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Skills</a>
@@ -49,7 +49,8 @@
   </header>
 
   <!-- MAIN -->
-  <main class="container-fluid vh-100">
+  <main class="container-fluid vh-100" data-bs-spy="scroll" data-bs-target="#navbar-header" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+    
     <div class="d-flex justify-content-between align-items-end position-fixed fixed-bottom mb-2 ms-2 me-2 ">
       <!-- Social Links -->
       <div class="d-flex flex-column justify-content-around fs-5">
@@ -72,38 +73,38 @@
     <!-- END Social Links -->
 
     <!-- About Page -->
-    <div class="mt-5 pt-3 mt-lg-0 pt-lg-0 min-vh-100 d-flex align-items-center">
+    <div class="mt-5 pt-3 mt-lg-0 pt-lg-0 min-vh-100 d-flex align-items-center" id="aboutpage">
       <div class="d-flex flex-column-reverse flex-lg-row justify-content-between align-items-center px-4 m-3 text-light rounded-4" style="background-color: rgba(33,37,41,0.95);">
         <!-- About Sides -->
         <!-- Mobile -->
-        <div class="about-leftside d-flex flex-column justify-content-between d-lg-none">
-          <div class="about-content my-3" style="text-align: justify;">
+        <div class="d-flex flex-column justify-content-between d-lg-none">
+          <div class="my-3" style="text-align: justify;">
             I'm <span class="fw-bold text-uppercase">Kate Lynn (Zurbano) Porto</span>, a Senior DevOps professional with 5 years of experience in DevOps practices. I have a strong passion for web development and I'm currently exploring this exciting field in my free time. My goal is to transition from DevOps to Web Development, combining my technical skills with creativity to build innovative and user-friendly web applications.
           </div>
-          <div class="mission pb-4">
+          <div class="pb-4">
             <span class="fw-bold text-uppercase">mission:</span> Empowering digital experiences through DevOps expertise and a commitment to continuous learning in web development.
           </div>
         </div>
         <!-- Desktop -->
-        <div class="about-leftside me-2 d-flex flex-column justify-content-between d-none d-lg-block w-75">
-          <div class="about-heading fs-1 fw-bold text-uppercase">
+        <div class="me-2 d-flex flex-column justify-content-between d-none d-lg-block w-75">
+          <div class="fs-1 fw-bold text-uppercase">
             About Me
           </div>
-          <div class="about-content fs-6 my-4" style="text-align: justify;">
+          <div class="fs-6 my-4" style="text-align: justify;">
             I'm <span class="fw-bold text-uppercase">Kate Lynn (Zurbano) Porto</span>, a Senior DevOps professional with 5 years of experience in DevOps practices. I have a strong passion for web development and I'm currently exploring this exciting field in my free time. My goal is to transition from DevOps to Web Development, combining my technical skills with creativity to build innovative and user-friendly web applications.
           </div>
-          <div class="mission mb-2">
+          <div class="mb-2">
             <span class="fw-bold text-uppercase">mission:</span> Empowering digital experiences through DevOps expertise and a commitment to continuous learning in web development.
           </div>
         </div>
         <!-- End About Sides  -->
 
-        <div class="about-rightside text-center my-2">
-          <div class="about-heading fs-1 fw-bold text-uppercase text-center d-lg-none mt-1">
+        <div class="text-center my-2">
+          <div class="fs-1 fw-bold text-uppercase text-center d-lg-none mt-1">
             About Me
           </div>
           <img src="./photos/profile.png" alt="profile-photo" class="rounded-circle img-fluid border border-dark my-1 w-75"/>
-          <div class="profile-content fst-italic fs-6">
+          <div class="fst-italic fs-6">
             "Bridging DevOps and Web Dev for Digital Excellence."
           </div>
         </div>
@@ -111,8 +112,7 @@
     </div>
     <!-- END About Page -->
 
-    
-    
+
     
   </main>
 
